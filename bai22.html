@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Xử lý sự kiện</title>
+
+<script>
+function hienTrangThai(noiDung) {
+    
+    document.getElementById("status").innerText = noiDung;
+}
+</script>
+
+</head>
+
+<body style="font-family:arial">
+
+
+<input type="button" value="Gửi"
+onmousemove="hienTrangThai('Bạn đang di chuyển chuột vào nút Gửi');">
+
+<br><br>
+
+
+<input type="text" name="HoTen"
+onmousemove="hienTrangThai('Bạn đang di chuyển chuột vào ô Họ Tên');">
+
+<br><br>
+
+
+<input type="radio" name="GioiTinh"
+onmousemove="hienTrangThai('Bạn đang di chuyển chuột vào Nam');"> Nam
+
+<input type="radio" name="GioiTinh"
+onmousemove="hienTrangThai('Bạn đang di chuyển chuột vào Nữ');"> Nữ
+
+<br><br>
+
+
+<div id="status" style="border-top:1px solid black; padding-top:10px;">
+    Trạng thái sẽ hiển thị ở đây
+</div>
+
+</body>
+</html>

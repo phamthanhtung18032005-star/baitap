@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Đếm số ký tự</title>
+
+<script language="JavaScript">
+function KiemTra()
+{
+    
+    var doDai = document.getElementsByName("NoiDung")[0].value.length;
+
+    
+    document.getElementsByName("SoKyTu")[0].value = doDai;
+
+
+    if (doDai > 200)
+        alert("Bạn đã gõ quá số ký tự cho phép!");
+}
+</script>
+
+</head>
+
+<body style="font-family:arial">
+
+Số ký tự đã gõ:
+<input type="text" name="SoKyTu"> 
+<br><br>
+
+<textarea name="NoiDung" cols="50" rows="10" onkeyup="KiemTra();"></textarea>
+
+</body>
+</html>

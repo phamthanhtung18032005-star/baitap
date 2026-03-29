@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="nhapds()" style="background-color: rgb(0, 255, 225);"> nhap vao danh sach </button>
+    <p id="ket qua"></p>
+    <script>
+        function nhapds(){
+            let ds=[];
+            let a= prompt('nhap so sinh vien');
+
+            for( let i=0;i<a;i++){
+                let ten= prompt("danh sach sinh vien"+(i+1));
+                ds.push(ten);
+            }
+            ds.sort();
+
+            let kq='';
+            for( let i in ds){
+                kq += ds[i]+"<br>";
+            }
+            document.getElementById("ket qua").innerHTML='danh sach da sap xep'+"<br>"+" "+kq;
+        }
+    </script>
+</body>
+</html>
